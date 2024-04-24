@@ -55,11 +55,13 @@ Commands in this category are applicable when engaging with a specific target.
 - **remove persistence:** This command is associated with removing the persistence mechanism, stopping the tool or script from automatically running on system startup.
 - **exit:** This command exits or closes the tool or script, terminating its execution.
 
+## Customizations:
+1. In `client.py`, set "auto_persistence=true" in order to make your payload become persistence as soon as the target executes it (without the need for the Server to send the command for becoming persistent).
+2. In `server.py`, set "auto_keylogger=true" to automatically send a command for starting the keylogger as soon as a target is connected to it.
+3. In `server.py`, set "no_of_devices" equal to the maximum number of devices you would like to handle at once.
+4. In `server.py`, set "delay" equal to the gap (in seconds) that you would like to have before receving next set of keylogs.
+
 ## Note:
 1. This tool will work correctly inside the same network. If you wish to use it outside your network, then you need to set up Port Forwarding either through your router or through utilities like (portmap.io and Openvpn) or Ngrok.
 2. You can try various obfuscation methods or changing icons to make it look more trustworthy.
 3. This is only made to use for monitoring your systems or for study and learning purposes. You will be totally responsible for any illegal act done through it by you.
-
-## Customizations:
-1. In `client.py`, you can set "auto_persistence=true" in order to make your payload become persistence as soon as the target executes it (without the need for the Server to send the command for becoming persistent).
-2. In `server.py`, set "auto_keylogger=true" to automatically send a command for starting the keylogger as soon as a target is connected to it.
