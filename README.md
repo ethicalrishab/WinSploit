@@ -1,4 +1,5 @@
-# WinSploit
+<center> <h1> WinSploit </h1> </center>
+<img src="Home.png" alt="Server Screenshot">
 WinSploit is a multithreaded windows spyware tool made in Python, allowing us to get complete control of windows based devices.
 
 ## Requirements:
@@ -28,6 +29,8 @@ WinSploit is a multithreaded windows spyware tool made in Python, allowing us to
 
 ## Commands:
 This section briefly describes the usage of each command available in our project.
+
+<img src="help.png" alt="Help Section">
 
 ### Home Commands:
 The commands within this section are designed for use within the main menu of the project, particularly when not actively engaging with a specific target.
